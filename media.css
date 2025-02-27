@@ -1,0 +1,1247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Licorice&family=Waterfall&family=WindSong:wght@400;500&family=Yeseva+One&display=swap');
+
+
+
+
+:root{
+    --color-primary: rgb(222, 220, 220); 
+    --box-shadow: 0 3px 15px rgba(0,9,0,.3);
+    --color-secondary: #636262; 
+    --color-third: hsla(0, 20%, 16%, 0.925);
+}
+
+/* Apply flex to center the content in .control */
+@media (min-width: 350px) and (max-width: 430px){
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 297%;
+    padding: 2rem;
+}
+
+.sec1{
+    height: 450vw;
+}
+
+.sec1 .right-header img{
+    width: 50%;
+    position: absolute;
+    padding-top: 7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 50%;
+    left: 50%;
+    background-color: #f6f4f4;
+    transform: translateY(-112%);
+    z-index: -1;
+}
+
+
+.sec1 h2{
+    margin-left: 5%;
+    color:rgb(125, 120, 120);
+    font-size: 80px;
+    line-height: 120px;
+    font-family: "Lexend", serif;
+    font-weight: 200;
+    line-height: 6.5rem;
+    margin-top: 85%;
+    position: absolute;
+}
+
+.sec1 h2 span{
+    color:rgb(81, 50, 50);
+    font-size: 115px;
+    font-weight: 190px;
+    font-family: "Lexend", serif;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+.sec1 p span{
+    color:rgb(58, 57, 57);
+    font-family: "Lexend", serif;
+    font-size: 40px;
+    font-weight: 200;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 75%;
+    text-wrap: nowrap;
+}
+
+
+.download-btn {
+    color:#302f2f;
+    background: rgb(230, 227, 227);
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: rgb(198, 197, 197);
+    transition: 0.3s;
+    padding: 20px 20px;
+    transition-property: background;
+    position: absolute;
+    margin-top: 45rem;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    margin-left: 5%;
+    text-wrap: nowrap;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.media-icons{
+
+    align-items: center;
+    gap: 15px;
+    margin-left: 5%;
+}
+
+.media-icons a{
+    position: relative;
+    color:#5b5656;
+    text-decoration: none;
+    font-size: 60px;
+    transition: 0.3s;
+    transition-property: transform;
+    margin-top: 38rem;
+}
+
+
+}
+
+
+
+
+
+@media (min-width: 800px) and (max-width: 1800px){
+
+
+}
+
+
+
+
+
+/* Large devices (laptops, 900px to 1200px) */
+@media (min-width: 2000px) and (max-width: 3300px) {
+    /* Styles for large screens */
+
+    .controls  p{
+        font-family: "Lexend", serif;
+        text-align: center;
+        font-weight: 300;
+        display: flex;
+        text-wrap: nowrap;
+        padding-left: 1.2rem;
+        text-align: center;
+        font-size: 26px;
+    }
+   
+
+  
+.sec1 h2{
+    margin-left: 75%;
+    color:rgb(125, 120, 120);
+    font-size: 70px;
+    line-height: 120px;
+    font-family: "Lexend", serif;
+    font-weight: 200;
+    line-height: 6rem;
+    margin-top: -20rem;
+    position: absolute;
+}
+
+.sec1 h2 span{
+    color:rgb(81, 50, 50);
+    font-size: 120px;
+    font-weight: 200px;
+    font-family: "Lexend", serif;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+.sec1 p span{
+    color:rgb(58, 57, 57);
+    font-family: "Lexend", serif;
+    font-size: 40px;
+    font-weight: 200;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: -3.5rem;
+    text-wrap: nowrap;
+
+}
+
+.download-btn {
+    color:#302f2f;
+    background: rgb(230, 227, 227);
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: rgb(198, 197, 197);
+    transition: 0.3s;
+    padding: 18px 18px;
+    transition-property: background;
+    position: absolute;
+    margin-top: 7rem;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    margin-left: 75%;
+    text-wrap: nowrap;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.media-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 75%;
+    margin-top: 20rem;
+}
+
+.media-icons a{
+    position: relative;
+    color:#5b5656;
+    text-decoration: none;
+    font-size: 65px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.sec2 {
+    transform: translateY(0) scale(1);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, white 10%, hsla(0, 20%, 16%, 0.925) 0%, hsla(0, 20%, 16%, 0.925) 25%, 
+    white 25%, white 100%);
+    display: flex; /* Ensures full height usage */
+    margin-right: 20%;
+}
+
+.sec2 .header-content {
+    display: grid;
+    grid-template-columns: 1.1fr 2fr; /* First 1/3 for brown, second 2/3 for white */
+    width: 100%;
+}
+
+.sec2 .left-header h1 {
+    color: #e1e0e0;
+    font-size: 5vw;
+    font-family: "Lexend", serif;
+}
+
+
+.sec2 .left-header h1 span {
+    font-family: "Lexend", serif;
+}
+
+
+.sec2 .right-header img{
+    width: 15%;
+    align-items: right;
+    bottom: 0;
+    left: 75%;;
+    transform: translateX(60%);
+    position: absolute;
+}
+
+    .sec2 .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align content vertically */
+        align-items: flex-start; /* Align items to the left */
+        width: 50%; /* Ensure it spans the full width */
+        margin-top: 0;
+    }
+
+    .timeline {
+        position: relative;
+        width: 120%;
+        margin-left: 10%;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #7b5c57;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+    }
+    
+    .sec3 {
+        transform: translateY(0) scale(1);
+        background-color: #ffffffc3;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    
+    
+    .sec3 .header-content {
+        text-align: center; /* Centers the content horizontally */
+        
+    }
+    
+    .sec3 .header-content h1 {
+        color: #2c2323;
+        font-weight: 600;
+        font-size: 6vw;
+        letter-spacing: 3px;
+        font-family: "Lexend", serif;
+        margin-top: -100px;
+        text-transform: uppercase; /* Optional: Make the text uppercase */
+        margin-left: 16%;
+    }
+    
+    .sec3 .header-content h1 span {
+        font-size: 6vw;
+        font-family: "Lexend", serif;
+        font-weight: 300;
+        color: #635353;
+    }
+    
+    .sec3 .header-content p {
+        font-size: 1.5vw;
+        font-family: "Lexend", serif;
+        color: #392626;
+        padding-top: 1rem;
+        text-align: center; /* Center the paragraph */
+        padding-bottom: 1rem;
+    }
+    
+    .box {
+        width: 100%; /* Reduce width for smaller boxes */
+        height: 230px; /* Reduce height */
+        background-color: #2e1b1bd8;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: #faf9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem; /* Optional: Adjust text size for better fit */
+    }
+    
+    .sec3 .container {
+        width: 120%; 
+        height: 30vh; /* Keeps the same height */
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        row-gap: 0.5em; /* Space between rows */
+        column-gap: 0.8rem; /* Adjusted column spacing */
+        margin-left:30%;
+        margin-right: 30%;
+        margin-bottom: 5rem;
+    }
+    
+.sec3 img{
+    width: 12%;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -24%;
+    position: absolute;
+    margin-top: -12%;
+}
+
+
+.box i {
+    font-size: 60px; 
+    color: #faf9f9;
+    margin-bottom: 20px; 
+    align-items: center;
+}
+
+.box h3{
+    font-size: 25px; 
+    color: #faf9f9;
+    margin-bottom: 10px; 
+    align-items: center;
+    font-family: "Lexend", serif;
+}
+
+
+.box p{
+    font-size: 20px; 
+    color: #faf9f9;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+    font-family: "Lexend", serif;
+}
+
+.sec4 {
+    background-color: #ffffffc3;
+    padding-top: 0;
+    height: 130vh;
+}
+
+.sec4 .port-header {
+    text-align: center; /* Centers the header */
+    width: 100%;
+    margin-bottom: 2rem; /* Creates space between header and portfolio */
+    margin-top: -30%;
+}
+
+.sec4 .port-header h1{
+    color: #2c2323;
+    font-size: 5vw; /* Makes font size responsive */
+    font-family: "Lexend", serif;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.sec4 .port-header p{
+    color: #352a2a;
+    font-size: 1.3vw;
+    font-family: "Lexend", serif;
+    font-weight: 200;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem;
+    min-width: 45%;
+    max-width: 1200px;
+    justify-content: space-evenly; /* Ensures even spacing */
+    align-items: center;
+}
+
+
+.sec5{
+    transform: translateY(0) scale(1);
+    background-color: #ffffffc3;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+}
+
+
+.sec5 .main-title h1{
+    font-family: "Lexend", serif;
+    font-size: 5vw;
+    color: #2c2323;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20rem;
+    text-wrap: nowrap;
+    margin-left: 30%;
+    padding-top: 10%;
+}
+ 
+.sec5 .main-title h1 span{
+    font-family: "Lexend", serif;
+    font-size: 5vw;
+    font-weight: 200;
+    color: #856464;
+}
+
+
+.contact-content-con{
+    display: flex;
+    width: 90%;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+    .left-contact{
+        flex: 2;
+        padding-right: 5rem;
+        h4{
+            margin-top: 1rem;
+            font-size: 3.5rem;
+            text-wrap: nowrap;
+            text-transform: uppercase;   
+            font-family: "Lexend", serif;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 2rem;
+            font-family: "Lexend", serif;
+            font-size: 1.5rem;
+
+        }
+        .icon{
+            font-family: "Lexend", serif;
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            font-size: 1.5rem;
+            gap: 1.5rem;
+            line-height: 5rem;
+            i{
+                display: flex;
+                align-items: center;
+                font-size: 3rem;
+                line-height: 2rem;
+            }
+        }
+
+        .contact-icon{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-top: 3rem;
+            align-items: center;
+        }
+
+        .contact-icon a{
+            position: relative;
+            text-decoration: none;
+            font-size: 65px;
+            transition: 0.3s;
+            transition-property: transform;
+            border-radius: 50%;
+        }
+        
+        .contact-icon a:not(:last-child) {
+            display: flex;
+            margin-right: 30px;
+        }
+        
+        .contact-icon a:hover{
+            transform: scale(1.5);
+        }
+
+
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            p{
+                margin: .3rem 0 !important;
+                padding: 0 !important;
+            }
+        
+        }
+    }
+    
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+    }
+
+    .input-control {
+        margin: 1.5rem 0;
+        font-family: "Lexend", serif;
+        width: 130%;
+    
+        & input, 
+        & textarea {
+            border-radius: 30px;
+            font-weight: inherit;
+            font-size: inherit;
+            font-family: "Lexend", serif;
+            padding: 0.8rem 1.1rem;
+            outline: none;
+            border: none;
+            resize: none;
+            width: 100%;
+            background: rgb(218, 213, 213);
+        }
+        .i-c-2 {
+            display: flex;
+            gap: 1.5rem;  /* Adds space between inputs */
+            width: 100%;
+            color: #060606;
+        }
+    }
+
+    .submit-btn{
+        background: rgb(218, 213, 213);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        transition: 0.3s;
+        padding: 20px 20px;
+        transition-property: background;
+        position: absolute;
+        display: flex;
+    
+    }
+
+    .submit-btn .submit-icon{
+        font-family: "Lexend", serif;
+        color: #5b5656;
+        font-size: 15px;
+    }
+    
+    .submit-btn:hover{
+        background: #f7f2f2;
+        cursor: pointer;
+    
+    }
+
+    .sec5 img{
+        position: absolute;
+        width: 10%;
+        margin-top: -9%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+/* Extra Large devices (desktops, 1200px and above) */
+/* Test with a broader range */
+@media (min-width: 3301px) {
+
+
+/* Control buttons */
+
+.controls .control {
+    padding-top: 0.5%;
+    padding-bottom: 1.5%;
+    cursor: pointer;
+    background-color: #fefdfd;
+    width: 400px;
+    height: 55px;
+    border-radius: 2rem;
+    margin: 0.7rem 0;
+    row-gap: 3rem;
+}
+
+.controls  p{
+    font-family: "Lexend", serif;
+    text-align: center;
+    font-weight: 200;
+    display: flex;
+    text-wrap: nowrap;
+    padding-left: 4rem;
+    font-size: 0.9vw;
+}
+
+.sec1{
+    padding-left: 38rem;
+    padding-right: 30rem;
+}
+
+.sec1 h2{
+    margin-left: 43%;
+    font-size: 2.1vw;
+    line-height: 7rem;
+    position: absolute;
+    margin-top: -40%;
+
+}
+
+.sec1 h2 span{
+    color:rgb(81, 50, 50);
+    font-size: 150px;
+    font-family: "Lexend", serif;
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+.sec1 p span{
+    color:rgb(58, 57, 57);
+    font-size: 1.3vw;
+    font-weight: 200;
+    margin-left: 44%;
+    margin-top: -11%;
+    line-height: 10rem;
+    text-wrap: nowrap;
+}
+
+
+.download-btn {
+    font-size: 0.7vw;
+    margin-top: 20%;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    margin-left: 44%;
+    text-wrap: nowrap;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+}
+
+.download-btn:hover {
+    background: #dad5d5;
+    cursor: pointer;
+}
+
+
+.media-icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 44%;
+    margin-top: 46%;
+    
+}
+
+.media-icons a{
+    font-size: 70px;
+
+}
+
+.sec1 .right-header img{
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+    transform: translateX(-50%); /* Centers image horizontally */
+}
+
+
+.sec2 {
+    transform: translateY(0) scale(1);
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, white 10%, hsla(0, 20%, 16%, 0.925) 0%, hsla(0, 20%, 16%, 0.925) 25%, 
+    white 25%, white 100%);
+    display: flex; /* Ensures full height usage */
+}
+
+.sec2 .header-content {
+    display: grid;
+    grid-template-columns: 1.1fr 2fr; /* First 1/3 for brown, second 2/3 for white */
+    width: 100%;
+}
+
+.sec2 .left-header h1 {
+    color: #e1e0e0;
+    font-size: 5vw;
+    font-family: "Lexend", serif;
+}
+
+
+.sec2 .left-header h1 span {
+    font-family: "Lexend", serif;
+}
+
+
+.sec2 .right-header img{
+    width: 15%;
+    align-items: right;
+    bottom: 0;
+    left: 75%;;
+    transform: translateX(60%);
+    position: absolute;
+}
+
+    .sec2 .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align content vertically */
+        align-items: flex-start; /* Align items to the left */
+        width: 50%; /* Ensure it spans the full width */
+        margin-top: 0;
+    }
+
+    .timeline {
+        position: relative;
+        width: 120%;
+        margin-left: 10%;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #7b5c57;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+    }
+
+    .timeline-content p{
+        font-weight: 300;
+        font-size: 0.6vw;
+        padding-top: 0.5rem;
+    }
+
+    .timeline-content span{
+        font-style: italic;
+        text-wrap: nowrap;
+        font-size: 0.7vw;
+        margin-bottom: 0.7rem;
+    }
+
+    .timeline-item h3{
+        text-wrap: nowrap;
+        font-size: 0.9vw;
+    }
+
+    .timeline-item h4{
+        text-wrap: nowrap;
+        font-size: 0.7vw;
+    }
+
+    .skills-list li {
+        font-size: 0.6vw;
+        margin-left: 1rem;
+    }
+
+    .pro-btn li {
+        font-size: 0.55vw;
+
+    }
+ 
+    .timeline-item .right.expanded {
+        flex: 0 0 70%; /* Adjust width */
+    }
+
+    .timeline-item .right.expand {
+        flex: 0 0 52%; /* Adjust width */
+    }
+
+    .sec3 .header-content h1 {
+        color: #2c2323;
+        font-weight: 600;
+        font-size: 5vw;
+        letter-spacing: 3px;
+        font-family: "Lexend", serif;
+        margin-top: -100px;
+        text-transform: uppercase; /* Optional: Make the text uppercase */
+        margin-left: 10%;
+        text-wrap: nowrap;
+    }
+    
+    .sec3 .header-content h1 span {
+        font-size: 5vw;
+        font-family: "Lexend", serif;
+        font-weight: 300;
+        color: #635353;
+        text-wrap: nowrap;
+    }
+    
+    .sec3 .header-content p {
+        font-size: 1.4vw;
+        font-family: "Lexend", serif;
+        color: #392626;
+        padding-top: 1rem;
+        text-align: center; /* Center the paragraph */
+        padding-bottom: 5rem;
+    }
+    
+    .sec3 .container {
+        width: 60%; /* Adjusted width */
+        height: 30vh; /* Keeps the same height */
+        padding: 1rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        row-gap: 1em; /* Space between rows */
+        column-gap: 1.5rem;  
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 5%;
+    }
+    
+    
+.sec3 img{
+    width: 10%;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -22%;
+    position: absolute;
+    margin-top: -10%;
+}
+
+.box {
+    width: 100%; /* Reduce width for smaller boxes */
+    height: 20rem;
+    background-color: #2e1b1bd8;
+    padding: 1rem 2rem;
+    color: #faf9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem; /* Optional: Adjust text size for better fit */
+}
+
+
+.box i {
+    font-size: 70px; 
+}
+
+.box h3{
+    font-size: 30px; 
+}
+
+
+.box p{
+    font-size: 25px;
+    font-weight: 200;
+    padding-top: 0.5rem;
+
+}
+
+
+.sec4 {
+    height: 100vh;
+    width: 100%;
+}
+
+.sec4 .port-header {
+    text-align: center; /* Centers the header */
+    width: 100%;
+    margin-bottom: 2rem; /* Creates space between header and portfolio */
+    margin-top: 10rem;
+}
+
+
+.sec4 .port-header h1{
+    color: #2c2323;
+    font-size: 140px;
+    font-family: "Lexend", serif;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: -15rem;
+}
+
+
+.sec4 .port-header p{
+    color: #352a2a;
+    font-size: 35px;
+}
+
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15rem;
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+
+}
+    
+
+    .portfolio-item{
+        position: relative;
+        img{
+            width: 600px;
+            height: 950px;
+            object-fit: contain;
+            border-radius: 15px;
+            background-color: #fcfbfb;
+            padding: 2rem;
+            align-items: center;
+            border-style: double;
+            border-width: 5px;
+            border-color: rgba(0, 0, 0, 0.639);
+        }
+        .hover-item{
+            width: 600px;
+            height: 950px;
+            background-color: #f0eeee;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .4s ease-in-out;
+            border-style: solid;
+            border: #f0eeeee7;
+        }
+        .hover-item h3{
+            font-family: "Lexend", serif;
+            font-size: 30px;
+            padding-bottom: 1rem;
+        }
+        .hover-item p{
+            font-family: "Lexend", serif;
+            font-size: 20px;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+
+        .hover-item .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(10, 10, 10);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 0 1rem;
+        }
+
+        .hover-item .icons a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            color: rgb(253, 252, 252);
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            font-size: 30px;
+        }
+
+        .hover-item .icons:hover{
+            background-color: #cfc6c6;
+            i{
+                color: black;
+            }
+        }
+    }
+
+.portfolio-item:hover .hover-item{
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgb(243, 243, 243); /* Add shadow */
+    
+}
+
+.portfolio-item h4{
+    margin-top: 3rem;
+    font-size: 25px;
+}
+.portfolio-item p{
+    margin-top: 1rem;
+    font-size: 25px;
+}
+
+.portfolio-btn {
+    margin-top: 0.5rem;
+    column-count: 2; /* Creates two columns */
+    list-style-type: none;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 25px;
+}
+
+.portfolio-btn li {
+    margin-bottom: 8px; /* Adds spacing between list items */
+    background-color: #2c2323;
+    padding: 1rem 1rem;
+    width: 100%;
+    border-radius: 5%;
+    color: white;
+}
+
+.sec5{
+    transform: translateY(0) scale(1);
+    background-color: #ffffffc3;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    margin-top: 0;
+}
+
+
+.sec5 .main-title h1{
+    font-family: "Lexend", serif;
+    font-size: 5vw;
+    color: #2c2323;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    padding-left: 3%;
+    padding-top: 10%;
+}
+
+.sec5 .main-title h1 span{
+    font-family: "Lexend", serif;
+    font-size: 5vw;
+    font-weight: 200;
+    color: #856464;
+}
+
+.contact-content-con{
+    display: flex;
+    width: 88%;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+    .left-contact{
+        flex: 2;
+        padding-right: 5rem;
+        h4{
+            margin-top: 1rem;
+            font-size: 3.5rem;
+            text-wrap: nowrap;
+            text-transform: uppercase;   
+            font-family: "Lexend", serif;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 2rem;
+            font-family: "Lexend", serif;
+            font-size: 1.5rem;
+
+        }
+        .icon{
+            font-family: "Lexend", serif;
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            font-size: 1.5rem;
+            gap: 1.5rem;
+            line-height: 5rem;
+            i{
+                display: flex;
+                align-items: center;
+                font-size: 3rem;
+                line-height: 2rem;
+            }
+        }
+
+        .contact-icon{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-top: 3rem;
+            align-items: center;
+        }
+
+        .contact-icon a{
+            position: relative;
+            text-decoration: none;
+            font-size: 65px;
+            transition: 0.3s;
+            transition-property: transform;
+            border-radius: 50%;
+        }
+        
+        .contact-icon a:not(:last-child) {
+            display: flex;
+            margin-right: 30px;
+        }
+        
+        .contact-icon a:hover{
+            transform: scale(1.5);
+        }
+
+
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            p{
+                margin: .3rem 0 !important;
+                padding: 0 !important;
+            }
+        
+        }
+    }
+    
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+    }
+
+    .input-control {
+        margin: 1.5rem 0;
+        font-family: "Lexend", serif;
+        width: 130%;
+    
+        & input, 
+        & textarea {
+            border-radius: 30px;
+            font-weight: inherit;
+            font-size: inherit;
+            font-family: "Lexend", serif;
+            padding: 0.8rem 1.1rem;
+            outline: none;
+            border: none;
+            resize: none;
+            width: 100%;
+            background: rgb(218, 213, 213);
+        }
+        .i-c-2 {
+            display: flex;
+            gap: 1.5rem;  /* Adds space between inputs */
+            width: 100%;
+            color: #060606;
+        }
+    }
+
+    .submit-btn{
+        background: rgb(218, 213, 213);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        transition: 0.3s;
+        padding: 20px 20px;
+        transition-property: background;
+        position: absolute;
+        display: flex;
+    
+    }
+
+    .submit-btn .submit-icon{
+        font-family: "Lexend", serif;
+        color: #5b5656;
+        font-size: 15px;
+    }
+    
+    .submit-btn:hover{
+        background: #f7f2f2;
+        cursor: pointer;
+    
+    }
+
+    .sec5 img{
+        position: absolute;
+        width: 8%;
+        margin-top: -8%;
+        margin-left:0;
+    }
+
+
+
+}
+
