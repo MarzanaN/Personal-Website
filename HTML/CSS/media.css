@@ -20,13 +20,10 @@
 }
 
 body{
-    width: 297%;
+    width: 100%;
     padding: 2rem;
 }
 
-.sec1{
-    height: 450vw;
-}
 
 .sec1 .right-header img{
     width: 50%;
