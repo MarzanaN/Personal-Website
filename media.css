@@ -130,7 +130,7 @@ body{
 
 
 /* Large devices (laptops, 900px to 1200px) */
-@media (min-width: 2000px) and (max-width: 3300px) {
+@media only screen and (min-width : 1224px) {
     /* Styles for large screens */
 
     .controls  p{
