@@ -628,7 +628,7 @@ body{
 
 /* Extra Large devices (desktops, 1200px and above) */
 /* Test with a broader range */
-@media (min-width: 3301px) {
+@media only screen and (min-width : 1824px) {
 
 
 /* Control buttons */
