@@ -1,0 +1,575 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Licorice&family=Waterfall&family=WindSong:wght@400;500&family=Yeseva+One&display=swap');
+
+
+body{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+:root{
+    --color-primary: rgb(222, 220, 220); 
+    --box-shadow: 0 3px 15px rgba(0,9,0,.3);
+    --color-secondary: #636262; 
+    --color-third: hsla(0, 20%, 16%, 0.925);
+}
+
+
+@media (min-width: 250px) and (max-width: 700px){
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Hide horizontal overflow */
+      }
+      
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensure padding doesn't affect layout */
+        font-family: "Lexend", serif;
+        
+    }
+
+    body{
+        background-color: #ffffffc3;
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        color:#302f2f;
+        transition: all .4s ease-in-out;
+        height: 100vh;
+        margin: 0; /* Remove any margin applied by the browser */
+        width: 100%;
+    }
+    
+
+    header{
+        height: 100vh;
+        width: 100%;
+        color: #191818;
+        overflow: hidden;
+    
+    }
+
+    .sec1 {
+        width: 100%;
+        height: 100%;
+        transform: translateY(0) scale(1);
+        background-color: #ffffffc3;
+        padding: 0;
+        
+    }
+
+    .controls {
+        display: none; /* Hide regular navigation on mobile */
+    }
+
+
+
+ 
+    
+.sec1 .header-content{
+    padding-left: 7%;
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: 1fr; /* Stacks the columns */
+    height: 100vh;
+}
+
+.sec1 .right-header {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100vh;
+    padding-right: 0;
+
+}
+
+.main-image img {
+
+    display: none;
+  }
+
+
+  @keyframes dropInFromTop {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-2000px); /* Start from above the viewport */
+    }
+    60% {
+        opacity: 1; /* Make it fully visible */
+        transform: translateY(30px); /* Start moving towards its final position */
+    }
+    100% {
+        opacity: 1; /* Stay fully visible */
+        transform: translateY(0); /* End at its final position */
+    }
+}
+
+.phone-image img {
+    display: block;
+    width: 65%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 200px;
+    top: 230px;
+    border-radius: 50%;
+    background-color: #f5f3f3;
+    padding: 10px;
+    left: 110px;
+    z-index: -1;
+    padding-left: 90px;
+    padding-top: 90px;
+    padding-bottom: 0;
+    bottom: 235px;
+    opacity: 0; /* Initially hidden */
+    animation: dropInFromTop 2.5s ease-out forwards; /* Apply the drop-in animation */
+}
+
+
+
+.sec1 .left-header {
+    display: flex; /* Use flex instead of grid for alignment */
+    flex-direction: column;
+    justify-content: left; 
+    align-items: left;
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+.sec1 h2 {
+    font-size: 4vh;
+    line-height: 40px;  
+    margin-top: 15rem;
+}
+
+.sec1 h2 span {
+    color: rgb(81, 50, 50);
+    font-size: 6vh;
+    font-weight: 800;
+    font-family: "Lexend", serif;
+    white-space: nowrap;
+    display: block;
+    text-wrap: nowrap;
+    text-align: left;
+}
+
+.sec1 p br{
+    display: none;
+}
+
+/* Subheading styles */
+.sec1 p span {
+    color: rgb(58, 57, 57);
+    font-family: "Lexend", serif;
+    font-size: 2vh;
+    font-weight: 200;
+    line-height: 35px;
+    text-align: left; 
+    text-wrap: nowrap;
+}
+
+/* Download button styling */
+.download-btn {
+    color: #302f2f;
+    background: rgb(250, 249, 249);
+    text-decoration: none;
+    font-size: 1.5vh;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: rgb(137, 133, 133);
+    box-shadow: 0 0 8px rgba(25, 24, 24, 0.7); 
+    transition: 0.3s;
+    padding: 10px 10px;
+    position: relative;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.download-btn:hover {
+    background: #dad5d5;
+    cursor: pointer;
+}
+
+/* Media Icons styling */
+.media-icons {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.media-icons a {
+    color: #5b5656;
+    text-decoration: none;
+    font-size: 4.5vh;
+    transition: 0.3s;
+}
+
+
+
+}
+
+
+
+@media (min-width: 701px) and (max-width: 1000px){
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Hide horizontal overflow */
+      }
+      
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensure padding doesn't affect layout */
+        font-family: "Lexend", serif;
+        
+    }
+
+    body{
+        background-color: #ffffffc3;
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        color:#302f2f;
+        transition: all .4s ease-in-out;
+        height: 100vh;
+        margin: 0; /* Remove any margin applied by the browser */
+        width: 100%;
+    }
+    
+
+    header{
+        height: 100vh;
+        width: 100%;
+        color: #191818;
+        overflow: hidden;
+    
+    }
+
+    .sec1 {
+        width: 100%;
+        height: 100%;
+        transform: translateY(0) scale(1);
+        background-color: #ffffffc3;
+        padding: 0;
+        
+    }
+
+
+
+
+.sec1 .header-content{
+    padding-left: 15%;
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: 1fr; /* Stacks the columns */
+    height: 100vh;
+}
+
+.sec1 .right-header {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 50%;
+
+}
+
+.main-image img {
+
+    display: none;
+  }
+
+
+  @keyframes dropInFromTop {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-2000px); /* Start from above the viewport */
+    }
+    60% {
+        opacity: 1; /* Make it fully visible */
+        transform: translateY(30px); /* Start moving towards its final position */
+    }
+    100% {
+        opacity: 1; /* Stay fully visible */
+        transform: translateY(0); /* End at its final position */
+    }
+}
+
+.phone-image img {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 26%;
+    border-radius: 50%;
+    background-color: #f5f3f3;
+    padding: 10px;
+    left: 25%;
+    z-index: -1;
+    padding-left: 100px;
+    padding-top: 120px;
+    padding-bottom: 0;
+    bottom: 235px;
+    opacity: 0; /* Initially hidden */
+    animation: dropInFromTop 2.5s ease-out forwards; /* Apply the drop-in animation */
+}
+
+
+
+.sec1 .left-header {
+    display: flex; /* Use flex instead of grid for alignment */
+    flex-direction: column;
+    justify-content: left; 
+    align-items: left;
+    margin-top: 8%;
+    margin-left: 0;
+    position: relative;
+}
+
+.sec1 h2 {
+    font-size: 4vh;
+    line-height: 5vh;
+    margin-top: 15rem;
+}
+
+.sec1 h2 span {
+    color: rgb(81, 50, 50);
+    font-size: 6vh;
+    font-weight: 800;
+    font-family: "Lexend", serif;
+    white-space: nowrap;
+    display: block;
+    text-wrap: nowrap;
+    text-align: left;
+}
+
+.sec1 p br{
+    display: none;
+}
+
+/* Subheading styles */
+.sec1 p span {
+    color: rgb(58, 57, 57);
+    font-family: "Lexend", serif;
+    font-size: 2vh;
+    font-weight: 200;
+    line-height: 35px;
+    text-align: left; 
+    text-wrap: nowrap;
+}
+
+/* Download button styling */
+.download-btn {
+    color: #302f2f;
+    background: rgb(250, 249, 249);
+    text-decoration: none;
+    font-size: 1vh;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: rgb(137, 133, 133);
+    box-shadow: 0 0 8px rgba(25, 24, 24, 0.7); 
+    transition: 0.3s;
+    padding: 10px 10px;
+    position: relative;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.download-btn:hover {
+    background: #dad5d5;
+    cursor: pointer;
+}
+
+/* Media Icons styling */
+.media-icons {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.media-icons a {
+    color: #5b5656;
+    text-decoration: none;
+    font-size: 4vh;
+    transition: 0.3s;
+}
+
+}
+
+
+
+/* Extra Large devices (desktops, 1200px and above) */
+/* Test with a broader range */
+@media (min-width: 1801px){
+
+
+/* Control buttons */
+
+/* controls */
+.controls {              
+    height: 7%;
+    padding: 15px 380px; /* Add padding to the left and right */ 
+   
+}
+
+
+/* Control buttons */
+.controls .control {
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    border-radius: 2rem;
+    margin: 0.7rem 0;
+    row-gap: 0.8rem;
+
+}
+.controls  p{
+    font-size: 1vw;
+}
+
+.sec1{
+    width: 100%;
+    height: 100%;
+}
+
+.sec1 .left-header {
+    margin-top: 11vw;
+    margin-left: 20%;
+}
+
+.sec1 .right-header {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    width: 100%;
+}
+
+.sec1 .header-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Left: 1fr, Right: 2fr */
+    height: 100vh;
+}
+
+.main-image img {
+    width: 33%;
+    object-fit: cover;
+    position: absolute;
+    transform: translateY(10%); /* Moves the image further down by its height */
+    bottom: 15%;
+    top: 15%;
+    margin-left: 13%;
+    z-index: -1;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-right: 2%;
+    padding-bottom: 0;;
+    border-radius: 50%;
+    background-color: #f5f3f3;
+  }
+
+
+
+
+/* Header text styles */
+.sec1 h2 {
+    color: rgb(125, 120, 120);
+    font-size: 5vh;
+    line-height: 6.5vh;
+    font-family: "Lexend", serif;
+    font-weight: 200;
+    text-align: left; 
+    margin-top: 5%; /* Adjust for better positioning */
+}
+
+/* Highlight span text */
+.sec1 h2 span {
+    color: rgb(81, 50, 50);
+    font-size: 8vh;
+    font-weight: 800;
+    font-family: "Lexend", serif;
+    white-space: nowrap;
+    display: block;
+    text-align: left;
+}
+
+/* Subheading styles */
+.sec1 p span {
+    color: rgb(58, 57, 57);
+    font-family: "Lexend", serif;
+    font-size: 3vh;
+    font-weight: 200;
+    line-height: 3vh;
+    text-align: left; 
+}
+
+/* Download button styling */
+.download-btn {
+    color: #302f2f;
+    background: rgb(230, 227, 227);
+    text-decoration: none;
+    font-size: 1.5vh;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: rgb(198, 197, 197);
+    transition: 0.3s;
+    padding: 20px 20px;
+    position: relative;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 1.5%;
+    align-self: flex-start;
+}
+
+.download-btn:hover {
+    background: #dad5d5;
+    cursor: pointer;
+}
+
+/* Media Icons styling */
+.media-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.media-icons a {
+    color: #5b5656;
+    text-decoration: none;
+    font-size: 4.5vh;
+    transition: 0.3s;
+}
+
+
+
+
+
+}
+
