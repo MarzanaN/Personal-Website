@@ -816,7 +816,7 @@ body{
         }
     }
 
-    .submit-btn{
+ .submit-btn .main-btn{
         background: rgb(218, 213, 213);
         text-decoration: none;
         text-transform: uppercase;
@@ -827,22 +827,25 @@ body{
         transition-property: background;
         position: absolute;
         display: flex;
+        outline: none;
     
     }
 
-    .submit-btn .submit-icon{
+    .submit-btn .main-btn .submit-icon{
         font-family: "Lexend", serif;
         color: #5b5656;
         font-size: 2vh;
     }
     
-    .submit-btn:hover{
+    .submit-btn .main-btn:hover{
         background: #f7f2f2;
         cursor: pointer;
     
     }
 
-
+.submit-btn a:focus {
+    outline: none;
+}
 
 
 
