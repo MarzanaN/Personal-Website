@@ -931,7 +931,7 @@ header{
         }
     }
 
-    .submit-btn{
+    .submit-btn .main-btn{
         background: rgb(218, 213, 213);
         text-decoration: none;
         text-transform: uppercase;
