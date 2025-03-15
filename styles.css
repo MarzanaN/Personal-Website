@@ -1,0 +1,1136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Licorice&family=Waterfall&family=WindSong:wght@400;500&family=Yeseva+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+    font-family: "Lexend", serif;
+    
+}
+
+
+:root{
+    --color-primary: rgb(222, 220, 220); 
+    --box-shadow: 0 3px 15px rgba(0,9,0,.3);
+    --color-secondary: #636262; 
+    --color-third: hsla(0, 20%, 16%, 0.925);
+}
+
+html{
+    height: -webkit-fill-avalable;
+}
+
+body{
+    background-color: #ffffffc3;
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    color:#302f2f;
+    transition: all .4s ease-in-out;
+    height: 100vh;
+    margin: 0; /* Remove any margin applied by the browser */
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    color: #191818;
+    overflow: hidden;
+
+}
+
+.sections {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    height: 100vh;
+
+}
+
+/* Ensure each section takes full viewport height */
+.section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Optional: background color for visibility */
+}
+.sec1 {
+    width: 100%;
+    height: 100%;
+    transform: translateY(0) scale(1);
+    background-color: #ffffffc3;
+}
+
+.sec1 .header-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left: 1fr, Right: 2fr */
+    height: 100vh;
+}
+
+/* Left header - positioning for content */
+.sec1 .left-header {
+    display: flex; /* Use flex instead of grid for alignment */
+    flex-direction: column;
+    justify-content: left; 
+    align-items: left;
+    margin-top: 10%;
+    margin-left: 200px;
+    position: relative;
+}
+
+/* Right header - image positioning */
+.sec1 .right-header {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    width: 100%;
+    height: 100vh;
+    padding-right: 40rem;
+}
+
+.main-image img {
+    width: 30%;
+    object-fit: cover;
+    position: absolute;
+    transform: translateY(10%); /* Moves the image further down by its height */
+    bottom: 140px;
+    left: 500px;;
+    z-index: -1;
+    padding-left: 90px;
+    top: 140px;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 0;;
+    border-radius: 50%;
+    background-color: #f5f3f3;
+  }
+
+
+  .phone-image img {
+    display: none;
+  }
+
+
+
+
+/* Header text styles */
+.sec1 h2 {
+    color: rgb(125, 120, 120);
+    font-size: 35px;
+    line-height: 50px; /* Fixed duplicate line-height */
+    font-family: "Lexend", serif;
+    font-weight: 200;
+    text-align: left; 
+    margin-top: 25%; /* Adjust for better positioning */
+}
+
+/* Highlight span text */
+.sec1 h2 span {
+    color: rgb(81, 50, 50);
+    font-size: 65px;
+    font-weight: 800;
+    font-family: "Lexend", serif;
+    white-space: nowrap;
+    display: block;
+    text-align: left;
+}
+
+/* Subheading styles */
+.sec1 p span {
+    color: rgb(58, 57, 57);
+    font-family: "Lexend", serif;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 15px;
+    text-align: left; 
+}
+
+/* Download button styling */
+.download-btn {
+    color: #302f2f;
+    background: rgb(230, 227, 227);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-color: rgb(198, 197, 197);
+    transition: 0.3s;
+    padding: 15px 25px;
+    position: relative;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.download-btn:hover {
+    background: #dad5d5;
+    cursor: pointer;
+}
+
+/* Media Icons styling */
+.media-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.media-icons a {
+    color: #5b5656;
+    text-decoration: none;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.media-icons a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.media-icons a:hover {
+    transform: scale(1.5);
+}
+
+
+
+.sec2 {
+    transform: translateY(0) scale(1);
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to right, hsla(0, 20%, 16%, 0.925) 0%, hsla(0, 20%, 16%, 0.925) 25%, 
+    white 25%, white 100%);
+    display: flex; /* Ensures full height usage */
+}
+
+.sec2 .header-content {
+    display: grid;
+    grid-template-columns: 0.6fr 2fr; /* First 1/3 for brown, second 2/3 for white */
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.sec2 .left-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: "Lexend", serif;
+    height: 100%;
+    width: 100%;
+    text-align: center; /* Ensures text alignment */
+}
+
+.sec2 .left-header h1 {
+    color: #e1e0e0;
+    font-size: 5vw;
+    font-family: "Lexend", serif;
+    writing-mode: sideways-lr; 
+}
+
+
+.sec2 .left-header h1 span {
+    font-family: "Lexend", serif;
+}
+
+
+.sec2 .right-header img{
+    width: 15%;
+    align-items: right;
+    bottom: 0;
+    left: 75%;;
+    transform: translateX(60%);
+    position: absolute;
+}
+
+    .sec2 .right-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align content vertically */
+        align-items: flex-start; /* Align items to the left */
+        width: 50%; /* Ensure it spans the full width */
+        margin-top: 0;
+    }
+
+    .timeline {
+        position: relative;
+        width: 100%;
+        height: 95%;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+    
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #7b5c57;
+        top: 0;
+        bottom: 0;
+        left: 90%;
+
+    }
+    
+    .timeline-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+
+    .timeline-dot {
+        width: 15px;
+        height: 15px;
+        background-color: #7b5c57;
+        border-radius: 50%;
+        position: absolute;
+        left: 90%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .timeline-content {
+        background: rgb(245, 243, 243);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        position: relative;
+        left: 40%;
+    }
+
+    .timeline-container {
+        position: relative;
+        height: 100%; 
+        display: flex;
+        justify-content: center;  /* Centers horizontally */
+        align-items: center;      /* Centers vertically if needed */
+        flex-direction: column;   /* Ensures the timeline stacks properly */
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .timeline-item h3{
+        text-wrap: nowrap;
+        font-size: 1vw;
+    }
+
+    .timeline-item h4{
+        text-wrap: nowrap;
+        font-size: 0.9vw;
+        margin-bottom: 0;
+    }
+
+
+    .timeline a:hover{
+        cursor: pointer;
+        color: #213ced;
+    }
+
+    .skills-list {
+        column-count: 2; /* Creates two columns */
+        list-style-type: disc; /* Adds bullets */
+        padding-top: 1rem;
+        text-align: left;
+    }
+    
+    .skills-list li {
+        margin-bottom: 8px; 
+        font-weight: 300;
+        font-size: 0.9vw;
+        margin-left: 1rem;
+    }
+    
+    .left {
+        text-align: left;
+        align-self: flex-start;
+        margin-left: -15%;
+    }
+    
+    .right {
+        text-align: left;
+        align-self: flex-end;
+        margin-left: 55%;
+    }
+
+    .timeline-item .right.expanded {
+        flex: 0 0 80%; /* Adjust width */
+    }
+
+    .timeline-item .right.expand {
+        flex: 0 0 60%; /* Adjust width */
+    }
+
+    .timeline-content-left a{
+        background-color: #213ced;
+    }
+
+    .timeline-content span{
+        font-style: italic;
+        text-wrap: nowrap;
+        font-size: 0.88vw;
+    }
+
+    .timeline-content p{
+        font-weight: 300;
+        font-size: 0.9vw;
+        padding-top: 0.2rem;
+    }
+
+    .pro-btn {
+        column-count: 2; /* Creates two columns */
+        list-style-type: none;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 0.9vw;
+    }
+    
+    .pro-btn li {
+        margin-bottom: 8px; /* Adds spacing between list items */
+        background-color: #d1c8c8;
+        padding: 1rem 1rem;
+        width: 100%;
+        border-radius: 5%;
+    }
+    .pro-btn li:hover{
+        cursor: pointer;
+        background-color: #5f5b5b;
+        color: white;
+    }
+    
+    .pro-btn li a:hover{
+        color: white;
+    }
+
+    .sec2 .right-header .btn{
+        display: flex;
+        align-items: center;
+        color:#302f2f;
+        background: rgb(244, 239, 239);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 300px;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        transition-property: background;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 200px;
+        gap: 30px;
+    }
+
+    .sec2 .buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        gap: 15px;
+        font-family: "Lexend", serif;
+    }
+    
+    .sec2 button {
+        position: relative;
+        color: #302f2f;
+        background: rgb(244, 239, 239);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out, background 0.3s;
+        text-align: center;
+        gap: 5rem;
+    }
+    
+    .sec2 .buttons button:not(:last-child) {
+        margin-right: 30px; /* space between buttons */
+    }
+    
+    .sec2 button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+
+
+    .sec3 {
+        transform: translateY(0) scale(1);
+        background-color: #ffffffc3;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 110vh;
+    
+    }
+    
+    
+    .sec3 .header-content {
+        text-align: center; /* Centers the content horizontally */
+        
+    }
+    
+    .sec3 .header-content h1 {
+        color: #2c2323;
+        font-weight: 600;
+        font-size: 7vw;
+        margin-top: -20%;
+        margin-left: 7rem;
+        letter-spacing: 3px;
+        font-family: "Lexend", serif;
+        text-transform: uppercase; /* Optional: Make the text uppercase */
+        text-wrap: nowrap;
+    }
+    
+    .sec3 .header-content h1 span {
+        font-size: 7vw;
+        font-family: "Lexend", serif;
+        font-weight: 300;
+        color: #635353;
+        text-wrap: nowrap;
+    }
+    
+    .sec3 .header-content p {
+        font-size: 2vw;
+        font-family: "Lexend", serif;
+        color: #392626;
+        padding-top: 0.8rem;
+        text-align: center; /* Center the paragraph */
+    }
+    
+    .sec3 .container {
+        width: 100%; 
+        height: 30vh; /* Keeps the same height */
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        row-gap: 0.5em; /* Space between rows */
+        column-gap: 0.8rem; /* Adjusted column spacing */
+        padding-left: 10rem;
+        padding-right: 10rem;
+
+    }
+    
+    
+.sec3 img{
+    width: 12%;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -28%;
+    position: absolute;
+    margin-top: -13%;
+}
+
+.box {
+    width: 100%; /* Reduce width for smaller boxes */
+    height: 190px; /* Reduce height */
+    background-color: #2e1b1bd8;
+    padding:2rem;
+    color: #faf9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+
+.box:hover{
+    background-color: #f4f2f2; /* Change background color on hover */
+    transform: scale(1); /* Slightly increase size */
+    box-shadow: 0px 4px 10px rgb(6, 6, 6); /* Add shadow */
+}
+
+.box:hover h3{
+    color: #221212;
+}
+.box:hover i{
+    color: #221212;
+}
+
+.box:hover p{
+    color: #221212;
+}
+
+
+.box i {
+    font-size: 50px; 
+    color: #faf9f9;
+    margin-bottom: 20px; 
+    align-items: center;
+}
+
+.box h3{
+    font-size: 1.2vw;
+    color: #faf9f9;
+    margin-bottom: 10px; 
+    align-items: center;
+    font-family: "Lexend", serif;
+}
+
+
+.box p{
+    font-size: 1vw; 
+    color: #faf9f9;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+    font-family: "Lexend", serif;
+}
+
+.sec4 {
+    background-color: #ffffffc3;
+    display: flex;
+    flex-direction: column; /* Ensures items stack vertically */
+    align-items: center; /* Centers the content */
+    height: 180vh;
+    width: 100%;
+
+}
+
+.sec4 .port-header {
+    text-align: center; /* Centers the header */
+    width: 100%;
+    margin-bottom: 2rem; /* Creates space between header and portfolio */
+    text-wrap: nowrap;
+}
+
+
+.sec4 .port-header h1{
+    color: #2c2323;
+    margin-top: 0;
+    font-size: 6.5vw;
+    font-family: "Lexend", serif;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.sec4 .port-header h1 span{
+    color: #685151;
+    font-family: "Lexend", serif;
+    font-weight: 300;
+
+}
+
+
+.sec4 .port-header p{
+    color: #352a2a;
+    font-size: 2.5vh;
+    font-family: "Lexend", serif;
+    font-weight: 200;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly; /* Ensures even spacing */
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    
+}
+    
+
+    .portfolio-item{
+        position: relative;
+        img{
+            width: 90%;
+            height: 75vh;
+            object-fit: contain;
+            border-radius: 15px;
+            background-color: #fcfbfb;
+            padding: 2rem;
+            align-items: center;
+            border-style: double;
+            border-width: 5px;
+            border-color: rgba(0, 0, 0, 0.639);
+        }
+        .hover-item{
+            width:90%;
+            height: 75vh;
+            background-color: #f0eeee;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .4s ease-in-out;
+            border-style: solid;
+            border: #f0eeeee7;
+        }
+        .hover-item h3{
+            font-family: "Lexend", serif;
+            font-size: 3vh;
+            padding-bottom: 1rem;
+        }
+        .hover-item p{
+            font-family: "Lexend", serif;
+            font-size: 2.5vh;
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+
+        .hover-item .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(10, 10, 10);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 0 1rem;
+        }
+
+        .hover-item .icons a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            color: rgb(253, 252, 252);
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            font-size: 30px;
+        }
+
+        .hover-item .icons:hover{
+            background-color: #cfc6c6;
+            i{
+                color: black;
+            }
+        }
+    }
+
+.portfolio-item:hover .hover-item{
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgb(243, 243, 243); /* Add shadow */
+    
+}
+
+.portfolio-item h4{
+    margin-top: 1.5rem;
+    font-size: 2.5vh;
+}
+.portfolio-item p{
+    margin-top: 0.5rem;
+    font-size: 2.5vh;
+}
+
+.portfolio-btn {
+    margin-top: 0.5rem;
+    column-count: 2; /* Creates two columns */
+    list-style-type: none;
+    text-align: center;
+}
+
+.portfolio-btn li {
+    margin-bottom: 8px; /* Adds spacing between list items */
+    background-color: #2c2323;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    border-radius: 5%;
+    color: white;
+    font-size: 3vh;
+}
+
+.portfolio-btn li a {
+    font-size: 2vh;
+    text-wrap: nowrap;
+}
+
+.portfolio-btn li:hover{
+    cursor: pointer;
+    background-color: #636262;
+}
+
+.portfolio-btn li a:hover{
+    color: white;
+}
+
+
+.sec5{
+    transform: translateY(0) scale(1);
+    background-color: #ffffffc3;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+}
+
+.sec5 img{
+    position: absolute;
+    width: 20vh;
+    margin-left: 9rem;
+    margin-top: -9rem;
+
+}
+
+.sec5 .main-title h1{
+    font-family: "Lexend", serif;
+    font-size: 14vh;
+    color: #2c2323;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-wrap: nowrap;
+}
+
+.sec5 .main-title h1 span{
+    font-family: "Lexend", serif;
+    font-size: 14vh;
+    font-weight: 200;
+    color: #856464;
+}
+
+.contact-content-con{
+    display: flex;
+    padding-top: 2.5rem;
+    padding-bottom: 6rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+}
+    .left-contact{
+        flex: 2;
+        padding-right: 2rem;
+        h4{
+            margin-top: 1rem;
+            font-size: 4.5vh;
+            text-transform: uppercase;   
+            font-family: "Lexend", serif;
+            text-wrap: nowrap;
+            padding-bottom: 1rem;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 2rem;
+            font-family: "Lexend", serif;
+            font-size: 2vh;
+
+        }
+        .icon{
+            font-family: "Lexend", serif;
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            font-size: 2.2vh;
+            i{
+                display: flex;
+                align-items: center;
+                font-size: 3vh;
+            }
+        }
+
+        .contact-icon{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            justify-content: left;
+        }
+
+        .contact-icon a{
+            position: relative;
+            text-decoration: none;
+            font-size: 6vh;
+            transition: 0.3s;
+            transition-property: transform;
+            border-radius: 50%;
+        }
+        
+        .contact-icon a:not(:last-child) {
+            display: flex;
+            margin-right: 3vh;
+        }
+        
+        .contact-icon a:hover{
+            transform: scale(1.5);
+        }
+
+        .contact-info{
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            p{
+                margin: .3rem 0 !important;
+                padding: 0 !important;
+            }
+        
+        }
+    }
+    
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+    }
+
+    .input-control {
+        margin: 1rem 0;
+        font-family: "Lexend", serif;
+    
+        & input, 
+        & textarea {
+            border-radius: 30px;
+            font-weight: inherit;
+            font-size: 2vh;
+            font-family: "Lexend", serif;
+            padding: 0.8rem 1.1rem;
+            outline: none;
+            border: none;
+            resize: none;
+            width: 90%;
+            background: rgb(218, 213, 213);
+        }
+        .i-c-2 {
+            display: flex;
+            gap: 1.5rem;  /* Adds space between inputs */
+            width: 90%;
+            color: #060606;
+        }
+    }
+
+    .submit-btn{
+        background: rgb(218, 213, 213);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        transition: 0.3s;
+        padding: 15px 15px;
+        transition-property: background;
+        position: absolute;
+        display: flex;
+    
+    }
+
+    .submit-btn .submit-icon{
+        font-family: "Lexend", serif;
+        color: #5b5656;
+        font-size: 2vh;
+    }
+    
+    .submit-btn:hover{
+        background: #f7f2f2;
+        cursor: pointer;
+    
+    }
+    
+
+
+.active {
+    display: block;
+    animation: scaleAnim 0.8s ease-in-out;
+}
+@keyframes scaleAnim {
+    0% {
+        transform: translateY(-100%) scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+}
+
+
+/* controls */
+.controls {
+    position: fixed;    
+    top: 0;             
+    width: 100%;      
+    height: 8%;
+    display: flex;      
+    justify-content: center; 
+    align-items: center; 
+    background-color: white; 
+    padding: 15px 180px; /* Add padding to the left and right */
+    z-index: 1000;      
+    gap: 2px; /* Add some spacing between items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+
+/* Active button */
+.controls .control.active-btn {
+    transition: all 0.4s ease-in-out;
+    color: rgb(159, 136, 136);
+}
+
+/* Active button icon */
+.controls .control.active-btn i {
+    color: #fcfbfb;
+    
+}
+
+.controls .control.active-btn i p{
+    color: #fcfbfb;
+    font-weight: 400;
+
+}
+
+
+/* Control buttons */
+.controls .control {
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    border-radius: 2rem;
+    margin: 0.7rem 0;
+    row-gap: 1rem;
+
+}
+
+/* Control button icons */
+.controls .control i {
+    font-size: 1rem;
+    color: black;
+    pointer-events: none;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+.controls  p{
+    font-family: "Lexend", serif;
+    text-align: center;
+    font-weight: 300;
+    display: flex;
+    text-wrap: nowrap;
+    padding-left: 2rem;
+    text-align: center;
+    font-size: 1.2vw;
+}
+ 
+
+.sec6 {
+    transform: translateY(0) scale(1);
+    display: none;
+    background-color: #fafafa8e;
+    width: 100%;
+    height: 8vh;
+}
+
+/* Apply flex to center the content in .control */
+.sec6 .control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.sec6 .control i {
+    font-size: 2rem;
+    color: black;
+    pointer-events: none;
+    border-radius: 50%;
+    padding: 1rem;
+    display: none;
+}
+
+.sec6 .control.active-btn:hover{
+    cursor: pointer;
+}
+ 
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.slide-out-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen */
+    width: 70%;
+    height: 100vh;
+    background-color: #f7f6f6;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    padding-top: 80px; /* Space for the hamburger icon */
+}
+
+.slide-out-menu.active {
+    right: 0; /* Slide into view */
+}
+
+.slide-out-menu .control {
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.slide-out-menu .control:hover {
+    background-color: #e1dfdf;
+}
+
+.control-1 {
+    margin-top: 30px; /* Adjust this value to add space between the top and the first button */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+
+.overlay.active {
+    display: block; /* Show the overlay when active */
+}
+.overlay {
+    display: none; /* Hide the overlay when not active */
+}
