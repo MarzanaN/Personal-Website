@@ -956,7 +956,16 @@ header{
         cursor: pointer;
     
     }
-    
+
+.submit-btn a:focus {
+        outline: none;
+    }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .submit-btn a {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
 
 
 .active {
