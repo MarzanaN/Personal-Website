@@ -480,7 +480,7 @@ body{
     .sec3 {
         padding-left: 0;
         padding-right: 0;
-        height: 130vh;
+        height: 110vh;
     }
 
 
@@ -568,7 +568,7 @@ body{
     display: flex;
     flex-direction: column; /* Ensures items stack vertically */
     align-items: center; /* Centers the content */
-    height: 350vh;
+    height: 300vh;
     width: 100%;
 
 }
