@@ -743,14 +743,14 @@ body{
             }
         }
 
-        .contact-icon{
+.contact-icon{
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            padding-top: 1.5rem;
+            padding-top: 1rem;
             justify-content: left;
-            padding-left: 3rem;
+            padding-left: 10rem;
             padding-right: 0;
         }
 
