@@ -744,6 +744,8 @@ margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 120vh;
+    margin-bottom: -8rem;
 }
 
 .sec5 img{

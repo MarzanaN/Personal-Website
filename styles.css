@@ -501,8 +501,8 @@ header{
     .sec3 .header-content h1 {
         color: #2c2323;
         font-weight: 600;
-        font-size: 7vw;
-        margin-left: 7rem;
+        font-size: 70px;
+        margin-left: 0;
         letter-spacing: 3px;
         font-family: "Lexend", serif;
         text-transform: uppercase; 
@@ -510,7 +510,7 @@ header{
     }
     
     .sec3 .header-content h1 span {
-        font-size: 7vw;
+        font-size: 70px;
         font-family: "Lexend", serif;
         font-weight: 300;
         color: #635353;
@@ -540,11 +540,11 @@ header{
     
     
 .sec3 img{
-    width: 12%;
+    width: 14%;
     height: auto; 
-    margin-left: -28%;
+    margin-left: -32%;
     position: absolute;
-    margin-top: -13%;
+    margin-top: -14%;
 }
 
 .box {
