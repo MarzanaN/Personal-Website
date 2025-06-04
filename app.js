@@ -32,36 +32,33 @@ buttons.forEach(button => {
     });
 });
 
-
 const menu = document.getElementById("menu");
 const hamburger = document.getElementById("hamburger");
 const overlay = document.getElementById("overlay");
 
+// Toggle menu and overlay on hamburger click
 hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
     overlay.classList.toggle("active");
 });
 
+// Close menu and overlay on overlay click
 overlay.addEventListener("click", () => {
     menu.classList.remove("active");
     overlay.classList.remove("active");
 });
 
+// Close menu and navigate on control item click
 document.querySelectorAll(".control").forEach(item => {
     item.addEventListener("click", () => {
         menu.classList.remove("active");
         overlay.classList.remove("active");
-    });
-});
 
-document.querySelectorAll(".control").forEach(item => {
-    item.addEventListener("click", () => {
-        menu.classList.remove("active");
-        overlay.classList.remove("active");
-        
-        // Get the corresponding data-id and navigate to the correct page
+        // Navigate based on data-id
         const pageId = item.getAttribute("data-id");
-        window.location.href = `#${pageId}`; // Change this line to match your URL structure
+        if (pageId) {
+            window.location.href = `#${pageId}`;
+        }
     });
 });
 
@@ -94,4 +91,54 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             alert("Error sending message: " + error.text);
         });
 });
+
+
+
+const isHoverable = window.matchMedia('(hover: hover)').matches;
+let currentlyPlaying = null;
+
+document.querySelectorAll('.portfolio-item').forEach(item => {
+  const video = item.querySelector('video');
+
+  if (isHoverable) {
+    // DESKTOP: play on hover
+    item.addEventListener('mouseenter', () => {
+      video.play();
+      currentlyPlaying = video;
+    });
+
+    item.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+      currentlyPlaying = null;
+    });
+  } else {
+    // MOBILE: play on tap
+    item.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevents click from bubbling up
+
+      // Stop currently playing video if it's a different one
+      if (currentlyPlaying && currentlyPlaying !== video) {
+        currentlyPlaying.pause();
+        currentlyPlaying.currentTime = 0;
+      }
+
+      // Always restart video from beginning and play
+      video.currentTime = 0;
+      video.play();
+      currentlyPlaying = video;
+    });
+  }
+});
+
+// MOBILE: stop video if user taps elsewhere
+if (!isHoverable) {
+  document.addEventListener('click', () => {
+    if (currentlyPlaying) {
+      currentlyPlaying.pause();
+      currentlyPlaying.currentTime = 0;
+      currentlyPlaying = null;
+    }
+  });
+}
 
