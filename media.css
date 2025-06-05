@@ -18,7 +18,7 @@ body{
 }
 
 
-@media (min-height: 683px) and (min-height:750px) {
+@media (min-height: 670px) and (min-height:700px) {
 
 
 
@@ -149,7 +149,7 @@ margin-top: 10rem;
 
 
 .phone-image {
-    width: 160%;
+    width: 150%;
     padding: 0;
     margin-bottom: 59rem;
     margin-left:0rem;
