@@ -18,10 +18,7 @@ body{
 }
 
 
-@media (min-height: 550px) and (min-height:1300px) {
-   .sec1{
-        min-height: 100vh;
-    }
+@media (min-height: 683px) and (min-height:750px) {
 
 
 
@@ -117,6 +114,7 @@ margin-top: 10rem;
         transform: translateY(0) scale(1);
         background-color: #ffffffc3;
         padding: 0;
+        min-height: 100vh;
         
     }
 
@@ -131,7 +129,6 @@ margin-top: 10rem;
     padding-right: 3rem;
     display: grid;
     grid-template-columns: 1fr; 
-    height: 100vh;
     background-color: #fafafadd;
 }
 
@@ -152,10 +149,11 @@ margin-top: 10rem;
 
 
 .phone-image {
-    width: 110%;
-    padding: 1rem;
+    width: 138%;
+    padding: 0;
     margin-bottom: 59rem;
-    margin-left: 3.2rem;
+    margin-left:0rem;
+
 }
 
 .phone-image img {
@@ -746,6 +744,7 @@ margin-top: 10rem;
     align-items: center;
     height: 120vh;
     margin-bottom: -8rem;
+    margin-top: 5rem;
 }
 
 .sec5 img{
@@ -2622,7 +2621,7 @@ margin-top: 10rem;
     position: absolute;
     transform: translateY(10%); 
     bottom: 8%;
-    top: 5%;
+    top: 3%;
     margin-left: 20%;
     z-index: -1;
     padding-left: 6%;
@@ -3116,8 +3115,6 @@ margin-top: 10rem;
     width: 9%;
     margin-bottom: -5rem;
 }
-
-
 
     .footer {
         font-size: 1rem;
